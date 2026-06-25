@@ -15,11 +15,11 @@ export const personalInfo = {
   summary:
     "Computer Science student focused on building responsive, accessible, and production-ready web applications.",
   location: "Odisha, India",
-    email: "mihirparidaw1@gmail.com",
+  email: "mihirparidaw1@gmail.com",
   github: "https://github.com/Mihir09CS",
   linkedin: "https://www.linkedin.com/in/mihir-parida-43b0aa295",
   resume:
-    "https://drive.google.com/file/d/14tNeNz3Xhgt1QzJGrky4VMqPH3Xi2fHN/view?usp=drive_link",
+    "https://drive.google.com/file/d/190VvgatysLvXEQ-a-BecX7vFyFe0UXs6/view?usp=drive_link",
   siteUrl: "https://mihirparida.dev/",
   recruiterHighlights: [
     "React and modern JavaScript",
