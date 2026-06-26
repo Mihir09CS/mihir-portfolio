@@ -106,7 +106,7 @@ export const projects = [
       "JWT",
     ],
 
-    githubUrl: "https://github.com/Mihir09CS/E-Learning_Web",
+    githubUrl: "https://github.com/Mihir09CS/Online_Quiz_Platform",
     liveUrl: "",
 
     color: "from-purple-500/20 to-pink-500/20",
@@ -191,11 +191,11 @@ export const projects = [
       "REST API",
       "Tailwind CSS",
     ],
-    githubUrl: "https://github.com/mihirparida/Krushi-Sathi",
-    liveUrl: "https://krushi-sathi.vercel.app",
+    githubUrl: "https://github.com/Mihir09CS/Krushi_Sathi",
+    liveUrl: "",
     color: "from-green-500/20 to-emerald-500/20",
     accent: "#22C55E",
-    label: "IN DEVELOPMENT ",
+    label: "In Progress ",
   },
 ];
 
