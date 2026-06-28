@@ -80,6 +80,48 @@ export const projects = [
   },
 
   {
+    id: 5,
+    title: "Task Tracker",
+    description:
+      "A production-inspired MERN task management application featuring CRUD operations, dashboard analytics, advanced filtering, sorting, pagination, and a modern responsive interface.",
+    longDescription:
+      "Developed a scalable full-stack task management platform following a layered Controller-Service-Repository architecture. Built a RESTful backend with Express.js and MongoDB, integrated with a modern React frontend using TanStack Query for efficient server-state management. The application includes dashboard analytics, advanced search, filtering, sorting, pagination, form validation, global error handling, rate limiting, secure API practices, responsive design, and light/dark theme support. Successfully deployed the backend on Vercel and the frontend on Netlify with environment-based configuration.",
+    features: [
+      "Complete CRUD Operations",
+      "Dashboard Analytics & Statistics",
+      "Advanced Search Functionality",
+      "Filtering by Status & Priority",
+      "Multi-field Sorting",
+      "Server-side Pagination",
+      "Form Validation with Zod",
+      "Responsive Mobile-First Design",
+      "Light & Dark Theme Toggle",
+      "RESTful API Integration",
+      "Global Error Handling",
+      "Rate Limiting & Security Middleware",
+    ],
+    tech: [
+      "React.js",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "TanStack Query",
+      "React Hook Form",
+      "Zod",
+      "Axios",
+      "Express Validator",
+    ],
+    githubUrl: "https://github.com/Mihir09CS/Task_Tracker_Web",
+    liveUrl: "https://taskt-trackerm.netlify.app/",
+    color: "from-blue-500/20 to-cyan-500/20",
+    accent: "#3B82F6",
+    label: "Live",
+  },
+  
+  {
     id: 2,
     title: "Online Quiz Platform",
 
