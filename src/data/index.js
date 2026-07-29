@@ -19,7 +19,7 @@ export const personalInfo = {
   github: "https://github.com/Mihir09CS",
   linkedin: "https://www.linkedin.com/in/mihir-parida-43b0aa295",
   resume:
-    "https://drive.google.com/file/d/190VvgatysLvXEQ-a-BecX7vFyFe0UXs6/view?usp=drive_link",
+    "https://drive.google.com/file/d/1hm6hOpvuNt5_fME22j9rCG8LylvRx2sr/view?usp=drive_link",
   siteUrl: "https://mihirparida.dev/",
   recruiterHighlights: [
     "React and modern JavaScript",
@@ -80,48 +80,6 @@ export const projects = [
   },
 
   {
-    id: 5,
-    title: "Task Tracker",
-    description:
-      "A production-inspired MERN task management application featuring CRUD operations, dashboard analytics, advanced filtering, sorting, pagination, and a modern responsive interface.",
-    longDescription:
-      "Developed a scalable full-stack task management platform following a layered Controller-Service-Repository architecture. Built a RESTful backend with Express.js and MongoDB, integrated with a modern React frontend using TanStack Query for efficient server-state management. The application includes dashboard analytics, advanced search, filtering, sorting, pagination, form validation, global error handling, rate limiting, secure API practices, responsive design, and light/dark theme support. Successfully deployed the backend on Vercel and the frontend on Netlify with environment-based configuration.",
-    features: [
-      "Complete CRUD Operations",
-      "Dashboard Analytics & Statistics",
-      "Advanced Search Functionality",
-      "Filtering by Status & Priority",
-      "Multi-field Sorting",
-      "Server-side Pagination",
-      "Form Validation with Zod",
-      "Responsive Mobile-First Design",
-      "Light & Dark Theme Toggle",
-      "RESTful API Integration",
-      "Global Error Handling",
-      "Rate Limiting & Security Middleware",
-    ],
-    tech: [
-      "React.js",
-      "Vite",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Mongoose",
-      "TanStack Query",
-      "React Hook Form",
-      "Zod",
-      "Axios",
-      "Express Validator",
-    ],
-    githubUrl: "https://github.com/Mihir09CS/Task_Tracker_Web",
-    liveUrl: "https://taskt-trackerm.netlify.app/",
-    color: "from-blue-500/20 to-cyan-500/20",
-    accent: "#3B82F6",
-    label: "Live",
-  },
-  
-  {
     id: 2,
     title: "Online Quiz Platform",
 
@@ -156,7 +114,7 @@ export const projects = [
     label: "In Progress",
   },
   {
-    id: 1,
+    id: 3,
 
     title: "TrustLensAI",
 
@@ -238,6 +196,83 @@ export const projects = [
     color: "from-green-500/20 to-emerald-500/20",
     accent: "#22C55E",
     label: "In Progress ",
+  },
+  {
+    id: 5,
+    title: "Task Tracker",
+    description:
+      "A production-inspired MERN task management application featuring CRUD operations, dashboard analytics, advanced filtering, sorting, pagination, and a modern responsive interface.",
+    longDescription:
+      "Developed a scalable full-stack task management platform following a layered Controller-Service-Repository architecture. Built a RESTful backend with Express.js and MongoDB, integrated with a modern React frontend using TanStack Query for efficient server-state management. The application includes dashboard analytics, advanced search, filtering, sorting, pagination, form validation, global error handling, rate limiting, secure API practices, responsive design, and light/dark theme support. Successfully deployed the backend on Vercel and the frontend on Netlify with environment-based configuration.",
+    features: [
+      "Complete CRUD Operations",
+      "Dashboard Analytics & Statistics",
+      "Advanced Search Functionality",
+      "Filtering by Status & Priority",
+      "Multi-field Sorting",
+      "Server-side Pagination",
+      "Form Validation with Zod",
+      "Responsive Mobile-First Design",
+      "Light & Dark Theme Toggle",
+      "RESTful API Integration",
+      "Global Error Handling",
+      "Rate Limiting & Security Middleware",
+    ],
+    tech: [
+      "React.js",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "TanStack Query",
+      "React Hook Form",
+      "Zod",
+      "Axios",
+      "Express Validator",
+    ],
+    githubUrl: "https://github.com/Mihir09CS/Task_Tracker_Web",
+    liveUrl: "https://taskt-trackerm.netlify.app/",
+    color: "from-blue-500/20 to-cyan-500/20",
+    accent: "#3B82F6",
+    label: "Live",
+  },
+  {
+    id: 6,
+    title: "KineticCare",
+    description:
+      "A production-ready MERN healthcare appointment booking platform with secure authentication, appointment scheduling, role-based dashboards, and automated email notifications.",
+
+    longDescription:
+      "Developed a scalable full-stack healthcare platform that enables users to discover wellness services, schedule appointments, and manage bookings seamlessly. Built secure authentication with JWT and Google OAuth, implemented role-based dashboards, integrated automated email notifications, and deployed the application using a modern production-ready architecture.",
+
+    features: [
+      "JWT Authentication & Google OAuth",
+      "Role-based User & Admin Dashboards",
+      "Healthcare service & appointment management",
+      "Slot scheduling, booking & cancellation",
+      "Automated email notifications with Brevo",
+    ],
+
+    tech: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Google OAuth",
+      "Brevo",
+      "Vercel",
+    ],
+
+    githubUrl: "https://github.com/Mihir09CS/KineticCare",
+    liveUrl: "https://kinetic-care-kc.vercel.app/",
+
+    color: "from-emerald-500/20 to-teal-500/20",
+    accent: "#10B981",
+    label: "Featured",
   },
 ];
 
