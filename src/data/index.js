@@ -78,9 +78,44 @@ export const projects = [
     accent: "#3B82F6",
     label: "Featured",
   },
-
   {
     id: 2,
+    title: "KineticCare",
+    description:
+      "A production-ready MERN healthcare appointment booking platform with secure authentication, appointment scheduling, role-based dashboards, and automated email notifications.",
+
+    longDescription:
+      "Developed a scalable full-stack healthcare platform that enables users to discover wellness services, schedule appointments, and manage bookings seamlessly. Built secure authentication with JWT and Google OAuth, implemented role-based dashboards, integrated automated email notifications, and deployed the application using a modern production-ready architecture.",
+
+    features: [
+      "JWT Authentication & Google OAuth",
+      "Role-based User & Admin Dashboards",
+      "Healthcare service & appointment management",
+      "Slot scheduling, booking & cancellation",
+      "Automated email notifications with Brevo",
+    ],
+
+    tech: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Google OAuth",
+      "Brevo",
+      "Vercel",
+    ],
+
+    githubUrl: "https://github.com/Mihir09CS/KineticCare",
+    liveUrl: "https://kinetic-care-kc.vercel.app/",
+
+    color: "from-emerald-500/20 to-teal-500/20",
+    accent: "#10B981",
+    label: "Featured",
+  },
+  {
+    id: 3,
     title: "Online Quiz Platform",
 
     description:
@@ -114,7 +149,7 @@ export const projects = [
     label: "In Progress",
   },
   {
-    id: 3,
+    id: 4,
 
     title: "TrustLensAI",
 
@@ -158,7 +193,7 @@ export const projects = [
     label: "In Development",
   },
   {
-    id: 4,
+    id: 5,
     title: "Krushi Sathi",
     description:
       "An AI-powered smart agriculture platform that combines MERN, Machine Learning, and field officers to help farmers with crop decisions, disease detection, fertilizer recommendations, and farm management.",
@@ -198,7 +233,7 @@ export const projects = [
     label: "In Progress ",
   },
   {
-    id: 5,
+    id: 6,
     title: "Task Tracker",
     description:
       "A production-inspired MERN task management application featuring CRUD operations, dashboard analytics, advanced filtering, sorting, pagination, and a modern responsive interface.",
@@ -237,42 +272,6 @@ export const projects = [
     color: "from-blue-500/20 to-cyan-500/20",
     accent: "#3B82F6",
     label: "Live",
-  },
-  {
-    id: 6,
-    title: "KineticCare",
-    description:
-      "A production-ready MERN healthcare appointment booking platform with secure authentication, appointment scheduling, role-based dashboards, and automated email notifications.",
-
-    longDescription:
-      "Developed a scalable full-stack healthcare platform that enables users to discover wellness services, schedule appointments, and manage bookings seamlessly. Built secure authentication with JWT and Google OAuth, implemented role-based dashboards, integrated automated email notifications, and deployed the application using a modern production-ready architecture.",
-
-    features: [
-      "JWT Authentication & Google OAuth",
-      "Role-based User & Admin Dashboards",
-      "Healthcare service & appointment management",
-      "Slot scheduling, booking & cancellation",
-      "Automated email notifications with Brevo",
-    ],
-
-    tech: [
-      "React.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "Google OAuth",
-      "Brevo",
-      "Vercel",
-    ],
-
-    githubUrl: "https://github.com/Mihir09CS/KineticCare",
-    liveUrl: "https://kinetic-care-kc.vercel.app/",
-
-    color: "from-emerald-500/20 to-teal-500/20",
-    accent: "#10B981",
-    label: "Featured",
   },
 ];
 
