@@ -19,7 +19,7 @@ export const personalInfo = {
   github: "https://github.com/Mihir09CS",
   linkedin: "https://www.linkedin.com/in/mihir-parida-43b0aa295",
   resume:
-    "https://drive.google.com/file/d/1hm6hOpvuNt5_fME22j9rCG8LylvRx2sr/view?usp=drive_link",
+    "https://drive.google.com/file/d/1toLGgXGnE84xdMtAZo9RRjK_oHMxnYDf/view?usp=drive_link",
   siteUrl: "https://mihirparida.dev/",
   recruiterHighlights: [
     "React and modern JavaScript",
