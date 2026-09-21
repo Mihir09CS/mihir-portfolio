@@ -1,37 +1,40 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-scroll';
-import { HiMenu, HiX } from 'react-icons/hi';
-import { useActiveSection, usePrefersReducedMotion } from '../hooks';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
+import { HiMenu, HiX } from "react-icons/hi";
+import { useActiveSection, usePrefersReducedMotion } from "../hooks";
 
 const navLinks = [
-  { to: 'home', label: 'Home' },
-  { to: 'about', label: 'About' },
-  { to: 'skills', label: 'Skills' },
-  { to: 'projects', label: 'Projects' },
-  { to: 'achievements', label: 'Achievements' },
-  { to: 'contact', label: 'Contact' },
+  { to: "home", label: "Home" },
+  { to: "about", label: "About" },
+  { to: "skills", label: "Skills" },
+  { to: "projects", label: "Projects" },
+  { to: "gallery", label: "Gallery" },
+  { to: "achievements", label: "Achievements" },
+  { to: "contact", label: "Contact" },
 ];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const activeSection = useActiveSection(navLinks.map(l => l.to));
+  const activeSection = useActiveSection(navLinks.map((l) => l.to));
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
     if (menuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [menuOpen]);
 
   return (
@@ -39,11 +42,13 @@ const Navbar = () => {
       <motion.header
         initial={prefersReducedMotion ? false : { y: -80, opacity: 0 }}
         animate={prefersReducedMotion ? undefined : { y: 0, opacity: 1 }}
-        transition={prefersReducedMotion ? undefined : { duration: 0.6, ease: 'easeOut' }}
+        transition={
+          prefersReducedMotion ? undefined : { duration: 0.6, ease: "easeOut" }
+        }
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'glass border-b border-white/5 py-3'
-            : 'bg-transparent py-5'
+            ? "glass border-b border-white/5 py-3"
+            : "bg-transparent py-5"
         }`}
         role="banner"
       >
@@ -54,16 +59,24 @@ const Navbar = () => {
               className="flex items-center gap-2"
               whileHover={{ scale: 1.02 }}
             >
-              <span className="font-mono text-xs text-blue-400 select-none">&lt;</span>
+              <span className="font-mono text-xs text-blue-400 select-none">
+                &lt;
+              </span>
               <span className="font-display font-bold text-lg text-white tracking-tight">
                 Mihir<span className="gradient-text">.</span>
               </span>
-              <span className="font-mono text-xs text-blue-400 select-none">/&gt;</span>
+              <span className="font-mono text-xs text-blue-400 select-none">
+                /&gt;
+              </span>
             </motion.div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1" role="navigation" aria-label="Main navigation">
+          <nav
+            className="hidden md:flex items-center gap-1"
+            role="navigation"
+            aria-label="Main navigation"
+          >
             {navLinks.map(({ to, label }) => (
               <Link
                 key={to}
@@ -77,18 +90,22 @@ const Navbar = () => {
                   type="button"
                   className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                     activeSection === to
-                      ? 'text-white'
-                      : 'text-[#B3B3B3] hover:text-white'
+                      ? "text-white"
+                      : "text-[#B3B3B3] hover:text-white"
                   }`}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.97 }}
-                  aria-current={activeSection === to ? 'location' : undefined}
+                  aria-current={activeSection === to ? "location" : undefined}
                 >
                   {activeSection === to && (
                     <motion.span
                       layoutId="nav-pill"
                       className="absolute inset-0 bg-white/8 rounded-lg border border-white/10"
-                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 30,
+                      }}
                     />
                   )}
                   <span className="relative z-10">{label}</span>
@@ -98,7 +115,13 @@ const Navbar = () => {
           </nav>
 
           {/* Hire Me Button */}
-          <Link to="contact" smooth duration={600} offset={-80} className="hidden md:block cursor-pointer">
+          <Link
+            to="contact"
+            smooth
+            duration={600}
+            offset={-80}
+            className="hidden md:block cursor-pointer"
+          >
             <motion.button
               type="button"
               className="btn-primary text-sm py-2 px-5"
@@ -132,7 +155,10 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25 }}
             className="fixed inset-0 z-40 md:hidden"
-            style={{ background: 'rgba(11, 15, 25, 0.97)', backdropFilter: 'blur(20px)' }}
+            style={{
+              background: "rgba(11, 15, 25, 0.97)",
+              backdropFilter: "blur(20px)",
+            }}
           >
             <div className="flex flex-col items-center justify-center h-full gap-6">
               {navLinks.map(({ to, label }, i) => (
@@ -152,9 +178,13 @@ const Navbar = () => {
                   >
                     <span
                       className={`text-2xl font-display font-semibold transition-colors ${
-                        activeSection === to ? 'gradient-text' : 'text-white/70 hover:text-white'
+                        activeSection === to
+                          ? "gradient-text"
+                          : "text-white/70 hover:text-white"
                       }`}
-                      aria-current={activeSection === to ? 'location' : undefined}
+                      aria-current={
+                        activeSection === to ? "location" : undefined
+                      }
                     >
                       {label}
                     </span>
@@ -168,7 +198,13 @@ const Navbar = () => {
                 transition={{ delay: navLinks.length * 0.07 }}
                 className="mt-4"
               >
-                <Link to="contact" smooth duration={600} onClick={() => setMenuOpen(false)} className="cursor-pointer">
+                <Link
+                  to="contact"
+                  smooth
+                  duration={600}
+                  onClick={() => setMenuOpen(false)}
+                  className="cursor-pointer"
+                >
                   <button type="button" className="btn-primary">
                     <span>Hire Me</span>
                   </button>
