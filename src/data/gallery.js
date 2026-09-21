@@ -30,7 +30,7 @@ export const gallery = [
     title: "Hackathon Work Session",
     category: "Hackathons",
     year: "2025",
-    event: "Suravi 2K25 Hackfest",
+    event: "SIH 2K25",
     description:
       "Collaborative development and problem-solving during the hackathon.",
   },
@@ -38,7 +38,7 @@ export const gallery = [
   {
     id: 3,
     image: "/gallery/suravi-badges.jpeg",
-    title: "Hackfest Participant",
+    title: "Hackfest ",
     category: "Hackathons",
     year: "2025",
     event: "Suravi 2K25",
@@ -63,7 +63,7 @@ export const gallery = [
   {
     id: 6,
     image: "/gallery/vibe-coding-session.jpeg",
-    title: "VIBE Coding 2026",
+    title: "VIBE Coding 2Participant026",
     category: "Tech Events",
     year: "2026",
     event: "VIBE Coding 2026",
